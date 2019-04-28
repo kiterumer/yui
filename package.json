@@ -1,0 +1,23 @@
+{
+  "name": "vue-ui",
+  "version": "1.0.0",
+  "description": "这是一个UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiterumer/Vue-UI.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "yinyangyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiterumer/Vue-UI/issues"
+  },
+  "homepage": "https://github.com/kiterumer/Vue-UI#readme"
+}

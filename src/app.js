@@ -17,6 +17,10 @@ new Vue({
 })
 
 import chai from 'chai'
+import spies from 'chai-spies'
+chai.use(spies)
+
+
 const expect = chai.expect
 //单元测试  
 //没有消息就是好消息
@@ -75,7 +79,7 @@ const expect = chai.expect
     vm.$el.remove()
     vm.$destroy()
 }
-
+// 测试点击按钮
 {
     //mock
     const Constructor = Vue.extend(Button)
@@ -86,12 +90,11 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.$on('click',function(){  //希望这个被执行
-        console.log(1)
-        expect(1).to.eq(1)
-    })
+    let spy = chai.spy(function(){})
+    vm.$on('click',spy)
     let button = vm.$el
     button.click()
+    expect(spy).to.have.been.called()
 
     vm.$el.remove()
     vm.$destroy()

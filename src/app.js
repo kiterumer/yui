@@ -79,6 +79,7 @@ const expect = chai.expect
     vm.$el.remove()
     vm.$destroy()
 }
+
 // 测试点击按钮
 {
     //mock

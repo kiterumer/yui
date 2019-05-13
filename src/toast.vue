@@ -75,6 +75,7 @@ export default {
         },
         close(){
             this.$el.remove()
+            this.$emit('close')
             this.$destroy()
         },
         log(){

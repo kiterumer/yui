@@ -44,13 +44,37 @@ new Vue({
         //     inputElement.dispatchEvent(event)
         //     console.log('hi')
         // },2000)
+
+        this.$toast('你的智商需要充值！',{
+            position:'middle',
+            enableHtml:false,
+            closeButton:{
+                text:'已充值',
+                callback(){
+                    console.log('他说已经充值智商了')
+                }
+            },
+            autoClose:false,
+            autoCloseDelay:3
+        })
     },
     methods:{
         // inputChange(e){
         //     console.log(e)
         // }
         showToast(){
-            this.$toast('我是message')
+            this.$toast(`你的智商目前为 ${parseInt(Math.random() * 100)}。你的智商需要充值！`, {
+                position: 'middle',
+                enableHtml: false,
+                closeButton: {
+                  text: '已充值',
+                  callback () {
+                    console.log('他说已经充值智商了')
+                  }
+                },
+                autoClose: false,
+                autoCloseDelay: 3
+            })
         }
     }
 })

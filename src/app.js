@@ -54,8 +54,7 @@ new Vue({
                     console.log('他说已经充值智商了')
                 }
             },
-            autoClose:false,
-            autoCloseDelay:3
+            autoClose:3
         })
     },
     methods:{
@@ -81,12 +80,19 @@ new Vue({
                     console.log('他说已经充值智商了')
                   }
                 },
-                autoClose: false,
-                autoCloseDelay: 3
+                autoClose: 3
             })
         }
     }
 })
+
+
+
+
+
+
+
+
 
 //不用看
 import chai from 'chai'

@@ -24,19 +24,19 @@
             --border-color-hover: #666;
         }
 
-        #app {
+        /* #app {
             margin: 20px;
-        }
+        } */
 
         body {
             font-size: var(--font-size);
         }
     </style>
-    <style>
+    <!-- <style>
         .box{
             margin: 20px;
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -48,11 +48,11 @@
                 <template slot="actions">
                     <button>设置</button>
                 </template>
-                <g-tabs-item name="woman">
-                    <g-icon name="settings"></g-icon>
+                <g-tabs-item name="woman" disabled>
+                    <g-icon name="settings" style="margin-right: 0.5em"></g-icon>
                     美女
                 </g-tabs-item>
-                <g-tabs-item name="finance" disabled>
+                <g-tabs-item name="finance" >
                     财经
                 </g-tabs-item>
                 <g-tabs-item name="sports">

@@ -168,7 +168,7 @@ $border-radius:4px;
         &::after {
         border-top-color: white;
         border-bottom:none;
-        top: calc(100% - 1px);
+        top: calc(100% - 1.4px);
       }
     }
     &.position-bottom {
@@ -184,7 +184,7 @@ $border-radius:4px;
       &::after {
         border-bottom-color: white;
         border-top: none;
-        bottom: calc(100% - 1px);
+        bottom: calc(100% - 1.4px);
       }
     }
     &.position-left {
@@ -202,7 +202,7 @@ $border-radius:4px;
       &::after {
         border-left-color: white;
         border-right: none;
-        left: calc(100% - 1px);
+        left: calc(100% - 1.4px);
       }
     }
      &.position-right {
@@ -219,7 +219,7 @@ $border-radius:4px;
       &::after {
         border-right-color: white;
         border-left: none;
-        right: calc(100% - 1px);
+        right: calc(100% - 1.4px);
       }
     }
   }

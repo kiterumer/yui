@@ -74,24 +74,6 @@ export default {
             document.body.appendChild(contentWrapper)
 
 
-            // let {width,height,top,left} = triggerWrapper.getBoundingClientRect()
-            // if(this.position === 'top'){
-            //     contentWrapper.style.left = left + window.scrollX + 'px'
-            //     contentWrapper.style.top = top + window.scrollY + 'px'
-            // }else if (this.position === 'bottom'){
-            //     contentWrapper.style.left = left + window.scrollX + 'px'
-            //     contentWrapper.style.top = top + height + window.scrollY + 'px'
-            // }else if (this.position === 'left'){
-            //     contentWrapper.style.left = left + window.scrollX + 'px'
-            //     let {height:height2} = contentWrapper.getBoundingClientRect()
-            //     contentWrapper.style.top = top + window.scrollY + 
-            //     (height-height2) / 2 + 'px'
-            // }else if (this.position === 'right'){
-            //     contentWrapper.style.left = left + window.scrollX + width + 'px'
-            //     let {height:height2} = contentWrapper.getBoundingClientRect()
-            //     contentWrapper.style.top = top + window.scrollY + 
-            //     (height-height2) / 2 + 'px'
-            // }
 
             const {width,height,top,left} = triggerWrapper.getBoundingClientRect()
             const {height:height2} = contentWrapper.getBoundingClientRect()
@@ -180,10 +162,12 @@ $border-radius:4px;
         }
         &::before {
         border-top-color: black;
+        border-bottom:none;
         top: 100%;
         }
         &::after {
         border-top-color: white;
+        border-bottom:none;
         top: calc(100% - 1px);
       }
     }
@@ -194,10 +178,12 @@ $border-radius:4px;
       }
       &::before {
         border-bottom-color: black;
+        border-top: none;
         bottom: 100%;
       }
       &::after {
         border-bottom-color: white;
+        border-top: none;
         bottom: calc(100% - 1px);
       }
     }
@@ -210,10 +196,12 @@ $border-radius:4px;
       }
       &::before {
         border-left-color: black;
+        border-right: none;
         left: 100%;
       }
       &::after {
         border-left-color: white;
+        border-right: none;
         left: calc(100% - 1px);
       }
     }
@@ -225,10 +213,12 @@ $border-radius:4px;
       }
       &::before {
         border-right-color: black;
+        border-left: none;
         right: 100%;
       }
       &::after {
         border-right-color: white;
+        border-left: none;
         right: calc(100% - 1px);
       }
     }

@@ -54,7 +54,7 @@ Vue.component('g-collapse-item',CollapseItem)
 new Vue({
     el:'#app',
     data:{
-        selectedTab:['2','1']
+        selectedTab:['2','3']
     },
     created(){
         // setTimeout(()=>{

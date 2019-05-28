@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h2>网格布局</h2>
         <p>
             <strong>预览</strong>
         </p>

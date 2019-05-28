@@ -5,9 +5,9 @@ module.exports = {
     themeConfig: {
       
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
-            { text: 'External', link: 'https://google.com' },
+            { text: '首页', link: '/' },
+            { text: '指南', link: 'https://vuepress.vuejs.org/zh/guide/' },
+            { text: '扩展', link: 'https://google.com' },
           ],
         sidebar: [
           '/',

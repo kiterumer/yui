@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper" :class="toastClasses">
+<div class="gulu-toast" :class="toastClasses">
     <div class="toast" ref="toast" >
         <div class="message">
             <slot v-if="!enableHtml"></slot>
@@ -122,7 +122,7 @@ $toast-bg:rgba(0,0,0,.75);
     
 }
 
-.wrapper{
+.gulu-toast{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);

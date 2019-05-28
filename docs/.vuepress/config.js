@@ -1,4 +1,5 @@
 module.exports = {
+    base:'/Vue-UI/',
     title: 'Young UI',
     description: '一个简洁好用的UI框架',
     themeConfig: {

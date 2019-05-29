@@ -10,7 +10,13 @@ module.exports = {
             { text: '扩展', link: 'https://google.com' },
           ],
         sidebar: [
-          '/',
+          {
+            title: '介绍',
+            collapsable: false,
+            children: [
+                '/introduce/',
+            ]
+          },
           {
               title:'入门',
               collapsable: false,

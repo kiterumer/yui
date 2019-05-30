@@ -19,6 +19,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+$button-radius:4px;
  .g-button-group{
     display:inline-flex;  //与其他按钮排在一行
     vertical-align:middle;  //与其他按钮对齐
@@ -31,13 +32,13 @@ export default {
         }
 
         &:first-child{
-            border-top-left-radius: var(--border-radius);
-            border-bottom-left-radius: var(--border-radius);
+            border-top-left-radius: $button-radius;
+            border-bottom-left-radius: $button-radius;
           
         }
         &:last-child{
-            border-bottom-right-radius: var(--border-radius);
-            border-top-right-radius: var(--border-radius);
+            border-bottom-right-radius: $button-radius;
+            border-top-right-radius: $button-radius;
         }
         &:hover{
             position: relative;  

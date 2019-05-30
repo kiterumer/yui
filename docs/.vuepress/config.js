@@ -6,8 +6,8 @@ module.exports = {
       
         nav: [
             { text: '首页', link: '/' },
-            { text: '指南', link: 'https://vuepress.vuejs.org/zh/guide/' },
-            { text: '扩展', link: 'https://google.com' },
+            { text: 'Vue文档', link: 'https://cn.vuejs.org/' },
+            { text: 'Google', link: 'https://google.com' },
           ],
         sidebar: [
           {
